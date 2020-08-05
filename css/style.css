@@ -1,3 +1,9 @@
+.header {
+    background: black;
+}
+body{
+	background-color: white;
+}
 #content {
 	float: right;
 	width: 90%;

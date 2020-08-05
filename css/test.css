@@ -1,0 +1,15 @@
+.header {
+    background: black;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E1E1E1;
+}
+ 
+.entry-title {
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFF;
+    background: #49a7a4;
+    padding: 8px;
+    margin-top: -8px;
+}
