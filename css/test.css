@@ -12,8 +12,32 @@ body{
 	float: left;
 	width: 10%;
 } */
+
+.flex-container {
+    padding: 0;
+    margin: 1;
+    list-style: none;
+    /* border: 1px solid silver; */
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+}
+.flex-item {
+    padding: 1px;
+}
+
+.nowrap  { 
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
 #content {
-    padding: 10px;
+    padding: 0;
     background-color:#000000;
     border: 1px solid #a2a9b1;
     width: 300px;
