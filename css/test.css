@@ -1,15 +1,28 @@
 .header {
     background: black;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #E1E1E1;
 }
- 
-.entry-title {
-    font-size: 14px;
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: #FFF;
-    background: #49a7a4;
-    padding: 8px;
-    margin-top: -8px;
+body{
+	background-color: white;
+}
+/* #content {
+	float: right;
+	width: 90%;
+}
+#navbar {
+	float: left;
+	width: 10%;
+} */
+#content {
+    padding: 10px;
+    background-color:#000000;
+    border: 1px solid #a2a9b1;
+    width: 300px;
+    float: right;
+    color: white;
+}
+
+#navbar {
+    font-size: 18px;
+    float: left;
+    color: white;
 }
