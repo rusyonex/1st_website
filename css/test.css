@@ -11,6 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    
 }
 
 .logo-header {
@@ -34,8 +35,6 @@ body{
     opacity: 0.7;
 }
     
-
-}
 .guide {
     display: flex;
     padding: 0;
@@ -46,55 +45,32 @@ body{
 }    
 .guide li {
     display: block;
-    padding: 30px;
     list-style: none;
     color: red;
     background-color: blue;
 }
 
-/* #content {
-	float: right;
-	width: 90%;
+.guide li:not(:first-child) {
+    margin-left: 10px;
 }
-#navbar {
-	float: left;
-	width: 10%;
-} */
 
-/* .flex-container {
-    padding: 0;
-    margin: 1;
-    list-style: none;
-    /* border: 1px solid silver; */
-    /* -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
+.menu-content-container {
+    display: flex; 
+    height: calc(100vh);
+   }
+
+.menu {
     display: flex;
+    flex-direction: column;
+    width: 250px;
     height: 100%;
-    justify-content: flex-start;
-}
-.flex-item {
-    padding: 1px;
+    background-color: violet;
 }
 
-.nowrap  { 
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-#content {
-    padding: 0;
-    background-color:#000000;
-    border: 1px solid #a2a9b1;
-    width: 300px;
-    float: right;
-    color: white;
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    width: 100%;
+    background-color: yellow;
 }
-
-#navbar {
-    font-size: 18px;
-    float: left;
-    color: white;
-} */ */
