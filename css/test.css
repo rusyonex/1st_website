@@ -1,28 +1,77 @@
-.header {
-    background: black;
+html {
+    height: 100%;
 }
 body{
-	background-color: white;
+    display: flex;
+    background-color: white;
+    margin: 0;
+    height: 100%;
 }
-/* #content {
-	float: right;
-	width: 90%;
-}
-#navbar {
-	float: left;
-	width: 10%;
-} */
-#content {
-    padding: 10px;
-    background-color:#000000;
-    border: 1px solid #a2a9b1;
-    width: 300px;
-    float: right;
-    color: white;
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
 }
 
-#navbar {
-    font-size: 18px;
-    float: left;
-    color: white;
+.logo-header {
+     display: flex;    
+     background: black; 
+     width: calc(100vW); 
+}
+
+.white-line {
+    display: flex;
+    height: 30px;
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    position: relative;
+    background: rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(196, 196, 196, 1);
+    
+}
+    
+.guide {
+    display: flex;
+    padding: 0;
+    margin: 10px 0px;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-weight: bold;
+}    
+.guide li {
+    display: block;
+    list-style: none;
+    color: red;
+    background-color: blue;
+}
+
+.guide li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.menu-content-container {
+    display: flex; 
+    flex-grow: 1;
+   }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    
+    background-color: violet;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: yellow;
 }
