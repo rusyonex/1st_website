@@ -65,7 +65,7 @@ body{
     flex-direction: column;
     width: 250px;
     
-    background-color: violet;
+    background-color: rgb(250, 4, 217);
 }
 
 .content {
@@ -74,4 +74,15 @@ body{
     padding: 20px;
     flex-grow: 1;
     background-color: yellow;
+    justify-content: space-evenly;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 390px;
+    background-color: rgba(238, 238, 238, 0.808);
+    border: 3px solid rgba(7, 4, 4, 0.411);
+
 }
