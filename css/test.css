@@ -6,6 +6,7 @@ body{
     background-color: white;
     margin: 0;
     height: 100%;
+    
 }
 .main-container {
     display: flex;
@@ -58,23 +59,25 @@ body{
 .menu-content-container {
     display: flex; 
     flex-grow: 1;
+    overflow-y: scroll;
    }
 
 .menu {
     display: flex;
     flex-direction: column;
     width: 250px;
-    
+    min-width: 250px;
     background-color: rgb(250, 4, 217);
 }
 
 .content {
     display: flex;
     flex-flow: row wrap;
-    padding: 20px;
+    padding-left: 1px;
     flex-grow: 1;
     background-color: yellow;
     justify-content: space-evenly;
+    overflow-x: hidden;
 }
 
 .card-item {
@@ -85,4 +88,12 @@ body{
     background-color: rgba(238, 238, 238, 0.808);
     border: 3px solid rgba(7, 4, 4, 0.411);
 
+}
+
+.item-img{
+    position: relative;
+    border: 1px solid hsla(21, 37%, 15%, 0.3);
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
