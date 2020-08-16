@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    font: 
 }
 body{
     display: flex;
@@ -95,7 +94,7 @@ body{
 .content {
     display: flex;
     flex-flow: row wrap;
-    padding-left: 1px;
+    /* padding-left: 1px; */
     flex-grow: 1;
     background-color: yellow;
     justify-content: space-evenly;
@@ -107,12 +106,21 @@ body{
 .card-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 300px;
     height: 360px;
     background-color: rgb(255, 255, 255);
     border: 3px solid rgba(7, 4, 4, 0.411);
+    box-sizing: border-box;
+}
 
+.item-disrp{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .item-img {
@@ -120,7 +128,6 @@ body{
     border: 3px solid rgb(250, 4, 217);
     max-width: 80%;
     height: auto;
-    
 }
 
 .item-name{
