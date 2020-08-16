@@ -88,7 +88,7 @@ body{
     flex-direction: column;
     width: 250px;
     min-width: 250px;
-    background-color: rgb(250, 4, 217);
+    background-color: rgb(220, 220, 220);
 }
 
 .content {
@@ -96,7 +96,7 @@ body{
     flex-flow: row wrap;
     /* padding-left: 1px; */
     flex-grow: 1;
-    background-color: yellow;
+    background-color: rgb(220, 220, 220);
     justify-content: space-evenly;
     overflow-x: hidden;
 }
@@ -125,7 +125,7 @@ body{
 
 .item-img {
     align-self: center;
-    border: 3px solid rgb(250, 4, 217);
+    border: 3px solid rgb(140, 140, 140);
     max-width: 80%;
     height: auto;
 }
