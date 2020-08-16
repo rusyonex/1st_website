@@ -6,13 +6,25 @@ body{
     background-color: white;
     margin: 0;
     height: 100%;
+    
 }
-.main-container {
+
+/* ШРИФТЫ */
+
+*{
+    font-family: 'roboto', sans-serif;
+}
+
+/* Главный котейнер */
+
+.main-container { 
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    
+       
 }
+
+/* ХЕДЕР */
 
 .logo-header {
      display: flex;    
@@ -20,9 +32,16 @@ body{
      width: calc(100vW); 
 }
 
+.logo-image{
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .white-line {
     display: flex;
-    height: 30px;
+    height: 40px;
     font-size: 2em;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -31,10 +50,12 @@ body{
     font-weight: bold;
     position: relative;
     background: rgb(255, 255, 255);
-    border-bottom: 3px solid rgba(196, 196, 196, 1);
+    border-bottom: 3px solid rgba(196, 196, 196, 0.842);
     
 }
-    
+
+/* Навигация */
+
 .guide {
     display: flex;
     padding: 0;
@@ -47,31 +68,80 @@ body{
 .guide li {
     display: block;
     list-style: none;
-    color: red;
-    background-color: blue;
+    color: rgb(0, 0, 0);
 }
 
 .guide li:not(:first-child) {
     margin-left: 10px;
 }
 
+/* Второй блок сайта: меню и карточки */
+
 .menu-content-container {
     display: flex; 
     flex-grow: 1;
+    overflow-y: scroll;
    }
 
 .menu {
     display: flex;
     flex-direction: column;
     width: 250px;
-    
-    background-color: violet;
+    min-width: 250px;
+    background-color: rgb(250, 4, 217);
 }
 
 .content {
     display: flex;
     flex-flow: row wrap;
-    padding: 20px;
+    /* padding-left: 1px; */
     flex-grow: 1;
     background-color: yellow;
+    justify-content: space-evenly;
+    overflow-x: hidden;
 }
+
+/* КАРТОЧКИ */
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 360px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgba(7, 4, 4, 0.411);
+    box-sizing: border-box;
+}
+
+.item-disrp{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.item-img {
+    align-self: center;
+    border: 3px solid rgb(250, 4, 217);
+    max-width: 80%;
+    height: auto;
+}
+
+.item-name{
+    font-weight: bold ;
+    text-transform: uppercase;     
+}
+
+.item-price{
+    text-transform: uppercase;
+    font-weight: bold
+}
+.item-gen{
+    font-weight: lighter ;
+    font-size: smaller;    ;
+    text-transform: capitalize ; 
+}
+
